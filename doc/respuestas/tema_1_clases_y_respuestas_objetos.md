@@ -119,6 +119,8 @@ public class Main {
         System.out.println("Distancia al origen: " + distancia);
     }
 }
+```
+
 
 ## 9. ¿Cuál es el punto de entrada en un programa en Java? ¿Qué es static y para qué vale? ¿Sólo se emplea para ese método main? ¿Para qué se combina con final?
 ### Respuesta
@@ -158,6 +160,7 @@ class Empleado {
         this.apellidos = apellidos;
     }
 }
+```
 ## 12. ¿Qué es la referencia this? ¿Se llama igual en todos los lenguajes? Pon un ejemplo del uso de this en la clase Punto
 ### Respuesta
 La referencia *this* se utiliza dentro de los métodos y constructores para señalar al objeto actual. Cuando un atributo y un parámetro comparten el mismo nombre, *this* permite diferenciar entre ambos, evitando ambigüedades durante la asignación. También se emplea para acceder de forma explícita a métodos de la propia instancia.
@@ -174,6 +177,7 @@ class Punto {
         this.y = y;
     }
 }
+```
 
 
 ## 13. Añade ahora otro nuevo método que se llame distanciaA, que reciba un Punto como parámetro y calcule la distancia entre this y el punto proporcionado
@@ -193,6 +197,7 @@ class Punto {
         return Math.sqrt(dx * dx + dy * dy);
     }
 }
+```
 
 
 ## 14. El paso del Punto como parámetro a un método, ¿es por copia o por referencia?, ¿afectan los cambios al objeto fuera del método?, ¿qué ocurre con un entero?
@@ -219,6 +224,7 @@ class Punto {
         return "(" + x + ", " + y + ")";
     }
 }
+```
 
 ## 16. Reflexiona: ¿una clase es como un struct en C? ¿Qué le falta al struct para ser como una clase y las variables de ese tipo ser instancias?
 ### Respuesta
@@ -249,3 +255,4 @@ double distancia_a(const Punto* p, const Punto* otro) {
     double dy = p->y - otro->y;
     return sqrt(dx * dx + dy * dy);
 }
+```
