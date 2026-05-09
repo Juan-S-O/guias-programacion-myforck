@@ -128,8 +128,8 @@ La multiplicidad indica cuántas instancias de una clase están relacionadas con
 
 ## 4. ¿Qué significa composición fuerte y composición débil? ¿Qué consecuencia implica en relación al ciclo de vida de los objetos? Indica a cuál solemos referirnos como "asociación o agregación" y a cuál como "composición" propiamente.
 ### Respuesta
-- **Composición fuerte (composición propiamente)**: el contenedor **posee** las partes y su **ciclo de vida está ligado**; si el contenedor deja de existir, sus partes también.
-- **Composición débil (asociación/aggregación)**: el contenedor **referencia** las partes, pero **no controla** su ciclo de vida; las partes existen independientemente.
+ **Composición fuerte (composición propiamente)**: el contenedor **posee** las partes y su **ciclo de vida está ligado**; si el contenedor deja de existir, sus partes también.
+**Composición débil (asociación/aggregación)**: el contenedor **referencia** las partes, pero **no controla** su ciclo de vida; las partes existen independientemente.
 
 Consecuencia: en fuerte, hay una dependencia vital; en débil, solo una relación de uso/tenencia sin dependencia de existencia.
 
